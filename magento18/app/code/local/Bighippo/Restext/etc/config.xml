@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Bighippo_Restext>
+            <version>1.0</version>
+        </Bighippo_Restext>
+</modules>
+<global>
+        <blocks>
+            <Bighippo_Restext>
+                <class>Bighippo_Restext_Block</class>
+            </Bighippo_Restext>
+        </blocks>
+        <helpers>
+            <restext_catalog>  
+                     <class>Bighippo_Restext_Helper_Catalog</class>
+            </restext_catalog>
+            <restext_basics>  
+                     <class>Bighippo_Restext_Helper_Basics</class>
+            </restext_basics>
+            <restext_customer>  
+                     <class>Bighippo_Restext_Helper_Customer</class>
+            </restext_customer>
+            <restext_order>  
+                     <class>Bighippo_Restext_Helper_Order</class>
+            </restext_order>
+            <restext_wishlist>  
+                     <class>Bighippo_Restext_Helper_Wishlist</class>
+            </restext_wishlist>
+            <restext_newsletter>  
+                     <class>Bighippo_Restext_Helper_Newsletter</class>
+            </restext_newsletter>
+        </helpers>
+        <models>
+            <Bighippo_Restext>
+                <class>Bighippo_Restext_Model</class>
+            </Bighippo_Restext>
+		</models>
+    </global>
+    <frontend>
+        <routers>
+            <restext>
+                <use>standard</use>
+                <args>
+                    <module>Bighippo_Restext</module>
+                    <frontName>restext</frontName>
+                </args>
+            </restext>
+        </routers>
+    </frontend>
+</config>

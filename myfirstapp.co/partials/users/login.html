@@ -1,0 +1,27 @@
+<div class="center_form">
+<h2>Users login</h2>
+<form name="user_form" novalidate class="forms">
+	<table>
+	<tr>
+		<td>Username:</td>
+		<td><input type="text" ng-module="user.name" required/></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" ng-module="user.password" required/></td>
+	</tr>
+	</table>
+	<div>
+		<button type="submit" ng-disabled="user_form.$invalid">Login</button>
+	</div>
+</form>
+<br>
+<br>
+<div>
+	<span><a ng-href="#/users/forget">Do you forget your password?</a></span>
+	<span><a ng-href="#/users/signup">Sign Up</a></span>
+</div>
+<div ng-repeat="data in datas">
+	{{data.name}}
+</div>
+</div>

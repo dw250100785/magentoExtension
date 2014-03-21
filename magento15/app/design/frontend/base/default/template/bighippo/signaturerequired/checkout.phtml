@@ -1,0 +1,44 @@
+<?php if($this->isEnabled()): ?>
+	<?php $freeShipping = $this->isFreeShippingSelected(); ?>
+	<?php $checkedSignature = $this->isSignatureRequiredSelected(); ?>
+
+	<p class="onestepcheckout-numbers onestepcheckout-numbers-2" style="margin-top: 25px;">Delivery Options</p>
+	<dl class="shipment-methods">
+	<dt style="margin-bottom: 5px;">
+	<input name="signature_requiered" type="radio" id="signature_requiered" value="true" <?php if($checkedSignature) echo 'checked="checked"'; ?> />
+	<label for="signature_requiered">Signature Required</label><br />
+	<dt>
+	<dt style="margin-bottom: 5px; line-height: 15px;">
+	<input name="signature_requiered" type="radio" id="signature_requiered" value="false" />
+	<label for="signature_requiered">
+		Deliver my package without collecting a signature
+		I confirm that my parcel can be left outside the premises of the address provided.
+		I take responsibility for any loss or damage that may occur.<br />
+		<a href="javascript:window.open('/privacy-policy','Privacy Policy','width=960,height=640,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');"><strong>View Terms &amp; conditions</strong></a>
+	</label>
+	</dt>
+	</dl>
+	<script>
+		jQuery(document).ready(function() {
+			var status = true;
+			var shippingMethod = '<?php echo $freeShipping; ?>';
+			jQuery.setSignature(status);
+			jQuery("#signature_requiered").attr('checked', true);
+			jQuery("input[name=signature_requiered]").click(function() {
+				var status = jQuery("#signature_requiered").is(':checked') ? true : false;
+				jQuery.setSignature(status);
+				
+			});
+		});
+		jQuery.setSignature = function(status) { 
+			jQuery.ajax({
+				url: "<?php echo Mage::getUrl('signaturerequired/ajax/signature', array('_secure' => true)) ?>",
+				type: "POST",
+				data: { signature_required: status },
+				success: function(data) {
+					get_separate_save_methods_function("<?php echo $this->getUrl('onestepcheckout/ajax/set_methods_separate') ?>", true)();
+				}
+			});
+		};
+	</script>
+<?php endif; ?>

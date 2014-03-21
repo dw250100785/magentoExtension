@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>BigHippo_HistoryOrderSuggestions</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Show every item an user purchased in my account</summary>
+    <description>Show every item an user purchased in my account</description>
+    <notes>The first stable release</notes>
+    <authors><author><name>BigHippo</name><user>BigHippo</user><email>ignacio@talosdigital.com</email></author></authors>
+    <date>2014-03-12</date>
+    <time>20:22:59</time>
+    <contents><target name="magecommunity"><dir><dir name="BigHippo"><dir name="HistoryOrderSuggestions"><dir name="Block"><dir name="Order"><file name="History.php" hash="e7099c90a79827b7ff6b34040f254dcf"/></dir></dir><dir name="Helper"><file name="Data.php" hash="71427cc2a6b5bbb744b4733cdfeb4edd"/><file name="Group.php" hash="e094e2201876f8bcf0d6c6ab334a7b94"/><file name="Order.php" hash="59001ff77b4fb7faf3a1483aa33adc23"/></dir><dir name="Model"><dir name="Config"><file name="Attributes.php" hash="016d06a16f34893d80798c77a4db4b67"/><file name="Staticblock.php" hash="53d267d3855565e18592062886cff51b"/></dir></dir><dir name="controllers"><file name="OrderController.php" hash="f5ae098b56d2497b3010bbdcb15e88e6"/></dir><dir name="etc"><file name="adminhtml.xml" hash="16f86ced47a9171d4548f00f44f0ec2a"/><file name="config.xml" hash="105026c11472100448029590ca7fbc22"/><file name="system.xml" hash="cbccab9eeb3e5c07da3d7c517f2f6a49"/></dir></dir></dir></dir></target><target name="magedesign"><dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="bighippo_historyordersuggestions.xml" hash="f2c8527f8a42a7a59fa6723699a5e45a"/></dir><dir name="template"><dir name="bighippo"><dir name="historyordersuggestions"><dir name="order"><file name="history.phtml" hash="4f62689f9933a5646660770fd0ac67c4"/></dir><dir name="product"><file name="list.phtml" hash="24dbd8656afac74472b35cea4a4f9222"/></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir><dir name="modules"><file name="BigHippo_HistoryOrderSuggestions.xml" hash="1f6e5a01ab4e53410ed34cc7ded44867"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

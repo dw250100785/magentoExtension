@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<BigHippo_ProviderStocks>
+			<version>1.0.0</version>
+		</BigHippo_ProviderStocks>
+	</modules>
+
+	<global>
+        <helpers>
+            <providerstocks>
+                <class>BigHippo_ProviderStocks_Helper</class>
+            </providerstocks>
+        </helpers>
+		<models>
+			<providerstocks>
+				<class>BigHippo_ProviderStocks_Model</class>
+			</providerstocks>
+		</models>
+        <resources>
+            <providerstocks_setup>
+                <setup>
+                    <module>BigHippo_ProviderStocks</module>
+                </setup>
+            </providerstocks_setup>
+        </resources>
+	</global>
+	
+</config>

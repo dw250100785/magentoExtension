@@ -1,0 +1,19 @@
+
+	{"id": 3,
+	 "organization":"Pichincha", 
+	 "office": "Envigado", 
+	 "address": "Cll 38 # 9",
+	"chieff" : "Talos D",
+	"City" : "Medellín",
+	"Services": [
+					{ "id" : "AD",
+					  "name" : "Advisor",
+					  "turn" : 12 },
+					{ "id" : "CC",
+					  "name" : "Credit Card",
+					  "turn" : 51 },
+					{ "id" : "SA",
+					  "name" : "Software Analytics",
+					  "turn" : 22 }		
+				]
+	}

@@ -1,0 +1,107 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+<?php $_items = $this->getOrders(); ?>
+
+<div class="page-title">
+    <h1><?php echo $this->__('Product suggestion based on your order history') ?></h1>
+</div>
+
+<?php
+	$product = $this->getProductSuggestion();
+	
+	if($product && $product->getId()) {
+		// Product Block
+		$block = $this->getChild('historyordersuggestions_suggestion_list');
+		$block->setProductId($product->getId());
+		echo $block->toHtml(); 
+	}
+	else {
+		// CMS Block
+		$block = $this->getChild('historyordersuggestions_suggestion_block');
+		$block->setBlockId($this->getSuggestionBlock());
+		echo $block->toHtml();
+	}
+?>
+<div class="clear">&nbsp;</div>
+
+<div class="page-title">
+    <h1><?php echo $this->__('History Order Suggestions') ?></h1>
+</div>
+
+<?php echo $this->getPagerHtml(); ?>
+<?php if($_items->getSize()): ?>
+<table class="data-table" id="my-orders-table">
+    <col width="1" />
+    <col width="1" />
+    <col />
+    <col width="1" />
+    <col width="1" />
+    <col width="1" />
+    <thead>
+        <tr>
+            <th><?php echo $this->__('Date') ?></th>
+            <th><?php echo $this->__('Image') ?></th>
+            <th><?php echo $this->__('SKU') ?></th>
+            <th><?php echo $this->__('Name') ?></th>
+            <th><?php echo $this->__('Price') ?></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php $_odd = ''; ?>
+        <?php foreach ($_items as $_item): ?>
+        <?php $_product = Mage::getModel('catalog/product')->load($_item->getProductId()) ?>
+        <tr>
+            <td><span class="nobr"><?php echo $this->formatDate($_item->getCreatedAtStoreDate()) ?></span></td>
+            <td>
+            	<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+	            	<img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>" width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
+            	</a>
+            </td>
+            <td><?php echo $_item->getSku(); ?></td>
+            <td><?php echo $_item->getName() ?></td>
+            <td><?php echo $_item->getOrder()->formatPrice($_item->getPrice()) ?></td>
+            <td class="a-center">
+                <span class="nobr">
+                	<a href="<?php echo $this->getProductViewUrl($_item) ?>"><?php echo $this->__('View Product') ?></a>
+					<span class="separator">|</span> <a href="<?php echo $this->getOrderViewUrl($_item->getOrder()) ?>"><?php echo $this->__('View Order') ?></a>
+                </span>
+            </td>
+
+
+
+        </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<script type="text/javascript">decorateTable('my-orders-table');</script>
+<?php echo $this->getPagerHtml(); ?>
+<?php else: ?>
+    <p><?php echo $this->__('You have placed no orders.'); ?></p>
+<?php endif ?>

@@ -1,0 +1,113 @@
+.find_button{
+	cursor: pointer;
+	font-size: 16px;
+	clear: both;
+    background-color: #377DC3;
+    border: 1px solid #377DC3;
+    color: #fff;
+    padding: 5px 23px;
+    margin: 9px -1px;
+    border-radius: 4px;
+}
+
+.organizations_container{
+	margin: 0px 10px 0px 10px;
+}
+
+.menu_options{
+	border-bottom: 1px solid #ddd;
+	padding: 9px 0px 9px;
+}
+
+div.menu_options span{
+	padding: 0px 10px;
+	border-left: 1px solid #ddd;
+}
+
+.center_form{
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 38px;
+}
+
+.main_div{
+	width: 1100px;
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+body{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.forms{
+	font-size: 14px;
+}
+
+form.forms table tr td{
+	 width: 190px;
+}
+
+input{
+	font-size: 14px;
+	width: 300px;
+	padding: 5px;
+}
+
+button{
+	font-size: 16px;
+	clear: both;
+    background-color: #377DC3;
+    border: 1px solid #377DC3;
+    color: #fff;
+    padding: 5px 23px;
+    margin: 9px -1px;
+    border-radius: 4px;
+}
+
+body{
+	font-family:"Lucida Grande";
+}
+
+.office_list{
+	width: 600px;
+}
+
+table.office_list tr th{
+	font-weight: bold;
+	color: #888;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+}
+
+table.office_list tr{
+	height: 26px;
+}
+
+table.office_list tr:hover{
+	background-color: #eee;
+}
+
+.getTurn{
+	cursor: pointer;
+	font-size: 20px;
+	clear: both;
+    background-color: #377DC3;
+    border: 1px solid #377DC3;
+    color: #fff;
+    padding: 5px 23px;
+    margin: 9px -1px;
+    text-decoration: none;
+}
+
+.yourTurn{
+	font-size: 50px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	width: 300px;
+	text-align: center;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<default>
+		<reference name="head">
+			<action method="addItem"><type>skin_js</type><name>js/jquery-1.10.2-no-conflict.js</name><params/></action>
+		</reference>
+	</default>
+
+	<onestepcheckout_index_index>
+		<reference name="content">
+			<reference name="onestepcheckout.checkout">
+				<block type="signaturerequired/checkout" name="signaturerequired_checkout" template="bighippo/signaturerequired/checkout.phtml" />
+			</reference>
+		</reference>
+	</onestepcheckout_index_index>
+	
+	<checkout_onepage_index>
+		<reference name="content">
+			<reference name="checkout.onepage">
+				<reference name="checkout.onepage.shipping_method">
+					<block type="signaturerequired/checkout" name="signaturerequired_checkout" template="bighippo/signaturerequired/checkout.phtml" />
+				</reference>
+			</reference>
+		</reference>
+	</checkout_onepage_index>
+
+    <sales_order_view>
+        <reference name="order_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_order_view>
+    
+    <sales_order_print>
+        <reference name="order_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_order_print>
+    
+    <sales_email_order_items>
+        <reference name="order_totals">
+           <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_email_order_items>
+
+    <sales_order_invoice>
+        <reference name="invoice_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_order_invoice>
+    
+    <sales_order_printinvoice>
+        <reference name="invoice_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_order_printinvoice>
+    
+    <sales_email_order_invoice_items>
+        <reference name="invoice_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_email_order_invoice_items>
+
+    <sales_order_creditmemo>
+        <reference name="creditmemo_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_order_creditmemo>
+    
+    <sales_order_printcreditmemo>
+        <reference name="creditmemo_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_order_printcreditmemo>
+    
+    <sales_email_order_creditmemo_items>
+        <reference name="creditmemo_totals">
+            <block type="signaturerequired/sales_order_total" name="signaturerequired.sales.order.total" />
+        </reference>
+    </sales_email_order_creditmemo_items>
+
+</layout>

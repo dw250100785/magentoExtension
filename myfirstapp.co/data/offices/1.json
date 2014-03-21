@@ -1,0 +1,18 @@
+
+	{"id": 1, "organization":"Pichincha", 
+	"office": "Cabecera", 
+	"address": "Cra 35 # 41",
+	"chieff" : "Ratorio",
+	"City" : "Bucaramanga",
+	"Services": [
+					{ "id" : "01",
+					  "name" : "Consulting",
+					  "turn" : 31 },
+					{ "id" : "CC",
+					  "name" : "Credit Card",
+					  "turn" : 22 },
+					{ "id" : "BR",
+					  "name" : "Bankrupcy",
+					  "turn" : 47 }		
+				]
+	}

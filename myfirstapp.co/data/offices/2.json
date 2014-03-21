@@ -1,0 +1,16 @@
+
+	{"id": 2,
+	 "organization":"Bancolombia", 
+	 "office": "El poblado", 
+	 "address": "Cll 41 # 10",
+	"chieff" : "Carlos C",
+	"City" : "Medellín",
+	"Services": [
+					{ "id" : "01",
+					  "name" : "Car's credit",
+					  "turn" : 101 },
+					{ "id" : "02",
+					  "name" : "UPAC",
+					  "turn" : 5 }		
+				]
+}

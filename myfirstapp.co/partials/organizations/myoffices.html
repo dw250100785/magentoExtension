@@ -1,0 +1,18 @@
+<h3>List of your offices</h3>
+	
+	<table class="office_list">
+		<tr>
+			<th><a href="" ng-click="predicate = '$index'; reverse=!reverse">#</a></th>
+			<th><a href="" ng-click="predicate = 'office'; reverse=!reverse">Office</a></th>
+			<th><a href="" ng-click="predicate = 'address'; reverse=!reverse">Address</a></th>
+			<th><a href="" ng-click="predicate = 'City'; reverse=!reverse">City</a></th>
+			<th>Edit</th>
+		</tr>
+		<tr ng-repeat="office in officesList.offices | orderBy:predicate:reverse">
+			<td>{{$index+1}}</td>
+			<td>{{office.office}}</td>
+			<td>{{office.address}}</td>
+			<td>{{office.City}}</td>
+			<td><a href="#/organizations/edit_office">edit</a></td>
+		</tr>
+	</table>

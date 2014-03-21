@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BigHippo_HistoryOrderSuggestions>
+            <active>true</active>
+            <codePool>community</codePool>
+        </BigHippo_HistoryOrderSuggestions>
+    </modules>
+</config> 

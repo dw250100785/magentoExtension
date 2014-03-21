@@ -1,0 +1,69 @@
+<config>
+	<tabs>
+        <bighippo_tab translate="label" module="bighippo_historyordersuggestions">
+            <label>BigHippo</label>
+            <sort_order>1</sort_order>
+        </bighippo_tab>
+    </tabs>
+    <sections>
+        <bighippo_historyordersuggestions translate="label" module="bighippo_historyordersuggestions">
+			<label>History Order Suggestions</label>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>bighippo_tab</tab>
+            <groups>
+				<local translate="label">
+                    <label>Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <attribute translate="label comment">
+							<label>Group Attribute</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>bighippo_historyordersuggestions/config_attributes</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                            <comment></comment>
+                        </attribute>
+                        <random translate="label comment">
+							<label>Random group select</label>
+                            <sort_order>20</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>Random choose suggestion available group.</comment>
+                        </random>
+                        <default_productid translate="label comment">
+							<label>Default product id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Use this product id as suggestion if no product available.</comment>
+                      	</default_productid>
+                        <default_staticblock translate="label comment">
+							<label>Static block alternative</label>
+							<frontend_type>select</frontend_type>
+							<source_model>bighippo_historyordersuggestions/config_staticblock</source_model>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>Use this static block if no product available.</comment>
+                      	</default_staticblock>
+				    </fields>
+               </local>            	
+            </groups>
+        </bighippo_historyordersuggestions>
+    </sections>
+</config>

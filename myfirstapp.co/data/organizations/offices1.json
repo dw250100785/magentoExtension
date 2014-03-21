@@ -1,0 +1,21 @@
+{
+	"organization_id": 1,
+	"name": "Banco Pichincha",
+	"offices": [
+				 {
+				 "id": 1,
+				 "office": "Cabecera",
+				 "address": "Cra 35 # 41",
+				 "chieff" : "Ratorio",
+				 "City" : "Bucaramanga" 
+				 },
+				 {
+				 "id": 3,
+	 			 "office": "Envigado", 
+	 			 "address": "Cll 38 # 9",
+				 "chieff" : "Talos D",
+				 "City" : "Medellín"
+				 }
+			]
+
+}

@@ -1,0 +1,16 @@
+
+	{"id": 4,
+	 "organization":"Davivienda", 
+	 "office": "Sabaneta", 
+	 "address": "Cra 21 # 14",
+	"chieff" : "Eclipse",
+	"City" : "Medellín",
+	"Services": [
+					{ "id" : "LC",
+					  "name" : "Lunch Credit",
+					  "turn" : 101 },
+					{ "id" : "TO",
+					  "name" : "Tropic Opal",
+					  "turn" : 5 }		
+				]
+	}

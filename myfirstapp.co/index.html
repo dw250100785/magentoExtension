@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>My First App</title>
+  	<h1>Welcome to myfirstapp.co</h1>
+  </head>
+  <body>
+  <div class="main_div">
+  	<div class="menu_options">
+  		<span><a ng-href="#/offices">Offices list</a></span>
+  		<span><a ng-href="#/users">Login</a></span>
+      <span><a ng-href="#/organizations">Organization's Dashboard</a></span>
+  	</div>
+    <div ng-view=""></div>
+  </div>
+    <script src="angular.min.js"></script>
+    <script src="angular-resource.min.js"></script>
+    <script src="angular-route.min.js"></script>
+    <script src="controller/app.js"></script>
+    <script src="controller/home.js"></script>
+    <script src="controller/offices.js"></script>
+    <script src="controller/users.js"></script>
+    <script src="controller/organizations.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="helpers/main.js"></script>
+  </body>
+</html>

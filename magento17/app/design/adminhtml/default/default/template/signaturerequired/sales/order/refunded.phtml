@@ -1,0 +1,16 @@
+<?php if($this->getSource() instanceof Mage_Sales_Model_Order){ ?>
+<?php if ((float) $this->getSource()->getSignaturerequiredAmountRefunded()): ?>
+    <tr>
+        <td class="label"><strong><?php echo Mage::helper('signaturerequired')->__('Signature fee refunded to customer') ?></strong></td>
+        <td><strong><?php echo $this->getSource()->getSignaturerequiredAmountRefunded(); ?></strong></td>
+    </tr>
+<?php endif; ?>
+<?php } else { ?>
+<?php if ((float) $this->getSource()->getSignaturerequiredAmount()): ?>
+    <tr>
+        <td class="label"><strong><?php echo Mage::helper('signaturerequired')->__('Signature fee refunded') ?></strong></td>
+        <td><strong><?php echo $this->getSource()->getSignaturerequiredAmount(); ?></strong></td>
+    </tr>
+<?php endif; 
+}?>
+

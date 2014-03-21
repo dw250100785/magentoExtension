@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<bighippo_historyordersuggestions>
+										<title>BigHipo HistoryOrderSuggestions</title>
+										<sort_order>100</sort_order>
+										<children>
+											<title>Local Settings</title>
+											<sort_order>100</sort_order>
+											<local>
+												<title>Local Settings</title>
+												<sort_order>100</sort_order>
+											</local>
+											<ftp>
+												<title>Ftp Settings</title>
+												<sort_order>200</sort_order>
+											</ftp>
+											<email>
+												<title>Email Log Settings</title>
+												<sort_order>300</sort_order>
+											</email>
+										</children>
+									</bighippo_historyordersuggestions>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

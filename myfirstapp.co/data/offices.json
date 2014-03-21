@@ -1,0 +1,6 @@
+[
+	{"id": 1, "organization":"Pichincha", "office": "Cabecera", "address": "Cra 35 # 41"},
+	{"id": 2, "organization":"Bancolombia", "office": "El poblado", "address": "Cll 41 # 10"},
+	{"id": 3, "organization":"Pichincha", "office": "Envigado", "address": "Cll 38 # 9"},
+	{"id": 4, "organization":"Davivienda", "office": "Sabaneta", "address": "Cra 21 # 14"}
+]

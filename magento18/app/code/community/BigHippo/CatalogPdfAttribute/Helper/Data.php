@@ -1,0 +1,5 @@
+<?php
+class BigHippo_CatalogPdfAttribute_Helper_Data extends Mage_Core_Helper_Abstract
+{
+
+}

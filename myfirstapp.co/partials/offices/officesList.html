@@ -1,0 +1,28 @@
+<h3>Offices list</h3>
+<div>
+	Find a office: <input onkeypress="find(this, 'find', 'office_results')" ng-model="query">
+	<span onClick="showResults('office_results')" class="find_button" id="find">Show all</span>
+</div>
+<br>
+<table id="office_results" style="display:none" class="office_list">
+	<tr>
+		<th>#</th>
+		<th>Organization</th>
+		<th>Office</th>
+		<th>Adress</th>
+	</tr>
+	<tr ng-repeat="office in offices | filter: query | orderBy:orderProp">
+		<td>{{$index + 1}}</td>
+		<td>{{office.organization}}</td>
+		<td><a ng-href="#/offices/{{office.id}}">{{office.office}}</a></td>
+		<td>{{office.address}}</td>
+	</tr>
+</table>
+<h3>Search Products</h3>
+	<form method="POST">
+	<div>
+		<span>Search: </span>
+		<span><input type="text" id="search"></span>
+		<span><button id="send" onClick="getinput()">Send</button></span>
+	</div>
+</form>
