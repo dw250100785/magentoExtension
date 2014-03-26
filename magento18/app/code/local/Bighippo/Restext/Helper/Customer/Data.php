@@ -87,4 +87,159 @@ class Bighippo_Restext_Helper_Customer_Data extends Mage_Core_Helper_Abstract
         }
         return $array_addresses;
     }
+
+    //LOGIN FUNCTIONS
+    public function login($login, $password)
+    {
+        $status = false;
+        if ($this->isLogged()) {
+            return array("status" => "logged in");
+        }
+        $session = Mage::getSingleton('customer/session');
+         if (!empty($login) && !empty($password)) {
+            try {
+                 $session->login($login, $password);
+                if ($this->isLogged()) {
+                     $status = true;
+                 }
+             }
+            catch (Exception $e) {
+                 $status = false;
+             }
+        } 
+        else {
+            $status = false;
+        }
+        return array("status" => $status);
+    }
+
+    public function logout()
+    {   if($this->isLogged()){
+            Mage::getSingleton('customer/session')->logout();
+            return array("status" => true);
+        }
+        else
+            return array("status" => false);
+    }
+
+    public function forgotPassword($email)
+    {
+        $status = false;
+        $token = null;
+        $id = null;
+
+        $getSession = Mage::getSingleton('customer/session');
+        if ($email) {
+            if (!Zend_Validate::is($email, 'EmailAddress')) {
+                $status = false;
+            }
+            else{
+                $customer = Mage::getModel('customer/customer')
+                    ->setWebsiteId(Mage::app()->getStore()->getWebsiteId())
+                    ->loadByEmail($email);
+
+                if ($customer->getId()) {
+                    try {
+                        $newResetPasswordLinkToken =  Mage::helper('customer')->generateResetPasswordLinkToken();
+                        $customer->changeResetPasswordLinkToken($newResetPasswordLinkToken);
+                        $customer->sendPasswordResetConfirmationEmail();
+                        $status = true;
+                        $token = $newResetPasswordLinkToken;
+                        $id = $customer->getId();
+                    } 
+                    catch (Exception $exception) {
+                        $status = false;
+                    }
+                }
+            } 
+        }
+        else {
+            $status = false;
+        }
+        return array("status" => $status, "token" => $token, "id" => $id);
+    }
+
+
+    public function resetPassword($id, $token, $password)
+    {
+        $customerId = $id;
+        $resetPasswordLinkToken = $token;
+        $passwordConfirmation = $password;
+        $status = false;
+        try {
+            if($this->_validateResetPasswordLinkToken($customerId, $resetPasswordLinkToken)){         
+                if (iconv_strlen($password) <= 0) {
+                    $status = false;
+                }
+                $customer = Mage::getModel('customer/customer')->load($customerId);
+                $customer->setPassword($password);
+                $customer->setConfirmation($passwordConfirmation);
+                $validationErrorMessages = $customer->validate();
+                if (is_array($validationErrorMessages)) {
+                    $errorMessages = array_merge($errorMessages, $validationErrorMessages);
+                }
+                if (!empty($errorMessages)) {
+                    $status = false;
+                }
+                else{
+                    try {
+                        $customer->setRpToken(null);
+                        $customer->setRpTokenCreatedAt(null);
+                        $customer->setConfirmation(null);
+                        $customer->save();
+                        $status = true;
+                        } 
+                    catch (Exception $exception) {
+                        $status = false;
+                    }
+                }
+            }
+        } 
+        catch (Exception $exception) {
+            $status = false;
+        }
+        return array("status" => $status);
+    }
+
+    protected function _validateResetPasswordLinkToken($customerId, $resetPasswordLinkToken)
+    {
+        if ($customerId < 0) {
+            return false;
+        }
+        $customer = Mage::getModel('customer/customer')->load($customerId);
+        if (!$customer || !$customer->getId()) {
+            return $customerId;
+        }
+        $customerToken = $customer->getRpToken();
+        if (strcmp($customerToken, $resetPasswordLinkToken) != 0 || $customer->isResetPasswordLinkTokenExpired()) {
+            return false;
+        }
+        return true;
+    }
+
+
+    public function saveCustomer($customer_data)
+    {   
+        $customer = Mage::getModel('customer/customer');
+        if(!$this->isLogged()){
+            $customer->setWebsiteId(Mage::app()->getWebsite()->getId());
+            $customer->setFirstname($customer_data->{'firstName'});
+            $customer->setLastname($customer_data->{'lastName'});
+            $customer->setEmail($customer_data->{'email'});
+            $customer->setPassword($customer_data->{'password'});
+            $customer->setIsSubscribed($customer_data->{'isSubscribed'});
+            try {
+                $customer->save();
+                $customer->setConfirmation(null);
+                $customer->save();
+                Mage::getSingleton('customer/session')->loginById($customer->getId());
+                $status = true;
+            }
+            catch (Exception $ex) {
+                $status = false;
+            }
+       }
+       return array("status" => $status);
+    }
+
 }

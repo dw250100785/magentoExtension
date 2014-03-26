@@ -13,14 +13,15 @@ function OfficeDataController($scope, $http, $routeParams){
 }
 
 function ProductsController($scope, $http){
+	
 	$scope.getProductSearch = function()
-		{	$http.post("http://magento.ver/magento18/restext/index?method=getProductSearch", {
-				saludo: "hola"
+		{	$http.post("http://magento.ver/magento18/restext/catalog?method=getProductSearch", {
+				query: $scope.search_term
 			}).success(function(data) {
 			      console.log(getResponseTag(data));
 			      $scope.response = getResponseTag(data);
 			  	}).error(function(data) {
-			  		console.log("hi");
+			  		console.log("error en el servicio web");
 			  	}
 			  	);
 		}

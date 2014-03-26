@@ -12,9 +12,11 @@ class Bighippo_Restext_Helper_Basics_Data extends Mage_Core_Helper_Abstract
                 );
             array_push($stores_array, $store_array);
         }
-
         return $stores_array;
+    }
 
+    public function getStoreId(){
+        return Mage::app()->getStore()->getStoreId();
     }
 
     public function getPopularTags(){

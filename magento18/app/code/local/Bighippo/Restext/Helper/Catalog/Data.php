@@ -2,6 +2,9 @@
 
 class Bighippo_Restext_Helper_Catalog_Data extends Mage_Core_Helper_Abstract
 {
+    protected $_query;
+    protected $_queryText;
+
 	public function getSubCategories($category){      
         if(count($category->getChildren())>0) {
             $array_subcategories = array();
@@ -84,7 +87,7 @@ class Bighippo_Restext_Helper_Catalog_Data extends Mage_Core_Helper_Abstract
         if($product->getAssociatedProducts()>0){
             $product_array = array_merge($product_array, array("associatedProducts" => $this->getAssociatedProducts($product)));
         }
-        if($product->getTypeInstance(true)->getConfigurableAttributesAsArray($product)>0){
+        if($product->getData('type_id') == "configurable"){
             $conf = array("configurableAttributes" => $this->getConfigurableAttributes($product));
             $product_array = array_merge($product_array, $conf);
         }
@@ -140,9 +143,8 @@ class Bighippo_Restext_Helper_Catalog_Data extends Mage_Core_Helper_Abstract
 
 
     public function getProductArray($product){
-        $view_helper = Mage::helper('catalog/product/view');
         $entitySummary = Mage::getModel('review/review')->getEntitySummary($product, Mage::app()->getStore()->getId());
-        $product_array = $product_array = array(
+        $product_array = array(
                                 "id" => $product->getId(),
                                 "name" => $product->getName(),
                                 "image" => $product->getImageUrl(),
@@ -164,31 +166,45 @@ class Bighippo_Restext_Helper_Catalog_Data extends Mage_Core_Helper_Abstract
         return Mage::getSingleton('catalog/layer');
     }
 
-    public function getProducts(){
-        
+    public function getProducts(){     
         $productCollection = Mage::getModel('catalog/product')
             ->getCollection()
             ->addAttributeToSelect('*')
             ->getItems();
-
-
         foreach ($productCollection as $id => $data)
         {
             $allProducts[] = $data;
         }
-
         $array_products = array();
         foreach ($allProducts as $product){
             array_push($array_products, 
                 array("id" => $product->getId(),
                       "name" => $product->getName(),
                       "price" => $product->getPrice()
-                      
                 ));
         }
-        
         $result = $array_products;
-
         return $result;
     }
+
+    //QUERIES
+
+    public function getSuggestCollection($search_term)
+    {
+        $collection = Mage::getResourceModel('catalogsearch/search_collection');
+        $text = $search_term;
+        $collection->addSearchFilter($text)
+            ->addStoreFilter()
+            ->addMinimalPrice()
+            ->addTaxPercents();
+
+        $products_array = array();
+        foreach ($collection as $product) {
+            $product = Mage::getModel("catalog/product")->load($product->getId());
+            $product_array = $this->getProductArray($product);
+            array_push($products_array, $product_array);
+        }
+        return $products_array;
+    }
+
 }

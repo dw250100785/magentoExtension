@@ -3,8 +3,18 @@
 <form name="forgotten_password">
 	<div>
 		<span>Please insert your username here:</span>
-		<span><input type="text" ng-model="user.name"></span>
-		<span></span><button type="submit">Send</button></span>
+		<span><input type="text" ng-model="email"></span>
+		<span></span><button type="submit" ng-click="forgotPassword()">Send</button></span>
+	</div>
+	<br><hr>
+	<div>
+		<span>New password:</span>
+		<span><input type="password" ng-model="new_password"></span>
+		<input type="hidden" ng-model="id" value="2">
+		<input type="hidden" ng-model="token" value"9ddf35b86f9ba4eb1005839cf6657587">
+		<span>
+			<button type="submit" ng-click="resetPassword()">Reset</button>
+		</span>
 	</div>
 </form>
 </div>

@@ -4,15 +4,20 @@
 	<table>
 	<tr>
 		<td>Username:</td>
-		<td><input type="text" ng-module="user.name" required/></td>
+		<td><input type="text" ng-model="username" required/></td>
 	</tr>
 	<tr>
 		<td>Password:</td>
-		<td><input type="password" ng-module="user.password" required/></td>
+		<td><input type="password" ng-model="password" required/></td>
 	</tr>
 	</table>
 	<div>
-		<button type="submit" ng-disabled="user_form.$invalid">Login</button>
+		<span>
+			<button type="submit" ng-click="validate_user()">Log in</button>
+		</span>
+		<span>
+			<button type="submit" ng-click="logout()">Log out</button>
+		</span>
 	</div>
 </form>
 <br>
