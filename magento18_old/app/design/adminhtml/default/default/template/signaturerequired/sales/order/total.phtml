@@ -1,0 +1,9 @@
+<?php $this->setPriceDataObject($this->getSource()) ?>
+<?php if ($this->getSource()->getSignaturerequiredFlag()): ?>
+    <tr>
+        <td class="label"><?php echo Mage::helper('signaturerequired')->format($this->getSource()->getSignaturerequiredAmount()) ?></td>
+        <td>
+            <?php echo $this->displayPrices($this->getSource()->getBaseSignaturerequiredAmount(), $this->getSource()->getSignaturerequiredAmount()); ?>
+        </td>
+    </tr>
+<?php endif; ?>

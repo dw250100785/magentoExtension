@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Bighippo_Restext>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Bighippo_Restext>
+    </modules>
+</config>

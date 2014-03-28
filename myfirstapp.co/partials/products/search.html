@@ -3,6 +3,22 @@
 	<div>
 		<span>Search: </span>
 		<span><input ng-model="search_term" type="text" id="search"></span>
-		<span><button id="send" ng-click="getProductSearch()">Send</button></span>
+		<span><button id="send" ng-click="getProductSearch();">Send</button></span>
 	</div>
+	<table id="search_results" style="display:block" class="office_list">
+	<tr>
+		<th>#</th>
+		<th>id</th>
+		<th></th>
+		<th>Product</th>
+		<th>Price</th>
+	</tr>
+	<tr ng-repeat="product in products">
+		<td>{{$index + 1}}</td>
+		<td>{{product.id}}</td>
+		<td><img src="{{product.image}}" height="64px"></td>
+		<td>{{product.name}}</td>
+		<td>{{product.price}}</td>
+	</tr>
+</table>
 </form>

@@ -1,0 +1,52 @@
+<config>
+	<tabs>
+        <icloset_tab translate="label" module="icloset">
+            <label>BigHippo iCloset</label>
+            <sort_order>1</sort_order>
+        </icloset_tab>
+    </tabs>
+    <sections>
+        <icloset translate="label" module="icloset">
+			<label>General Options</label>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <tab>icloset_tab</tab>
+            <groups>
+				<options translate="label">
+                    <label>Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+				        <women-categoryid translate="label">
+					        <label>Women Category</label>
+					        <frontend_type>select</frontend_type>
+					        <source_model>icloset/sourcecategories</source_model>
+					        <comment>Choose category of products</comment>
+					        <sort_order>1</sort_order>
+					        <show_in_default>1</show_in_default>
+					        <show_in_website>1</show_in_website>
+					        <show_in_store>1</show_in_store>
+				        </women-categoryid>
+					    <women-image>						
+						    <label>Women Image</label>
+						    <frontend_type>image</frontend_type>
+						    <comment>jpg / png</comment>
+						    <backend_model>adminhtml/system_config_backend_image</backend_model>
+						    <upload_dir config="system/filesystem/media" scope_info="1">images</upload_dir>
+						    <base_url type="media" scope_info="1">images</base_url>
+						    <sort_order>2</sort_order>
+						    <show_in_default>1</show_in_default>
+						    <show_in_website>1</show_in_website>
+						    <show_in_store>1</show_in_store> 
+					    </women-image>
+                    </fields>
+                </options>
+            </groups>
+        </icloset>
+    </sections>
+</config>

@@ -1,6 +1,5 @@
 $("input").attr("size", 40);
 
-
 function showResults(container_id)
 {
 	$("#"+container_id).fadeIn( "slow", function() { } );
@@ -40,4 +39,8 @@ function getResponseTag(xml){
 	response = response[0].childNodes[0].nodeValue;
 	json = angular.fromJson(response);
 	return json;
+}
+
+function getDir(){
+	return "http://magento.ver/magento18/index.php/restext/";
 }

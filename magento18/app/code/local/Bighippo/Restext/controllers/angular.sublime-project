@@ -7,10 +7,6 @@
 		},
 		{
 			"follow_symlinks": true,
-			"path": "/Users/vitaly/Documents/websites/htdocs/master.bighippo.co"
-		},
-		{
-			"follow_symlinks": true,
 			"path": "/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co"
 		}
 	]

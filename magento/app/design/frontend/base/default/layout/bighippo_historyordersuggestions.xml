@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="bighippo_historyordersuggestions">
+            	<name>historyordersuggestions</name>
+            	<path>historyordersuggestions/order/history/</path>
+            	<label>History Order Suggestions</label>
+            </action>
+        </reference>
+    </customer_account>
+
+    <historyordersuggestions_order_history translate="label" module="bighippo_historyordersuggestions">
+        <label>My history order suggestions</label>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="bighippo_historyordersuggestions/order_history" name="historyordersuggestions.order.history">
+                <block type="core/text_list" name="historyordersuggestions.order.history.info" as="historyordersuggestions_info" translate="label">
+                    <label>My history order suggestions</label>
+                </block>
+                <block type="core/template" name="historyordersuggestions_suggestion_list" template="bighippo/historyordersuggestions/product/list.phtml" />
+                <block type="cms/block" name="historyordersuggestions_suggestion_block" />
+            </block>
+            <block type="customer/account_dashboard" name="customer.account.link.back" template="customer/account/link/back.phtml"/>
+        </reference>
+    </historyordersuggestions_order_history>
+
+</layout>

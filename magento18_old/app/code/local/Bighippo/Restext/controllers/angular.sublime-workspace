@@ -1,0 +1,751 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"conf"
+			],
+			[
+				"pro",
+				"product_array"
+			],
+			[
+				"array",
+				"array_merge"
+			],
+			[
+				"attr",
+				"attributes_array"
+			],
+			[
+				"attri",
+				"attributes_array"
+			],
+			[
+				"option",
+				"options_array"
+			],
+			[
+				"attribute",
+				"attribute_array"
+			],
+			[
+				"atri",
+				"attribute_p"
+			],
+			[
+				"attributes",
+				"attributes_array"
+			],
+			[
+				"prod",
+				"product_array"
+			],
+			[
+				"item",
+				"item_array"
+			],
+			[
+				"cou",
+				"countryCode"
+			],
+			[
+				"countr",
+				"countries_array"
+			],
+			[
+				"countries",
+				"countries_array"
+			],
+			[
+				"curren",
+				"currency"
+			],
+			[
+				"getNews",
+				"getNewsletterStatus"
+			],
+			[
+				"getOrder",
+				"getOrderById"
+			],
+			[
+				"getPo",
+				"getPopularTags"
+			],
+			[
+				"getPr",
+				"getProductView"
+			],
+			[
+				"categ",
+				"category_id"
+			],
+			[
+				"getPro",
+				"getProductList"
+			],
+			[
+				"getCate",
+				"getCategories"
+			],
+			[
+				"getC",
+				"getCatalogHelper"
+			],
+			[
+				"cata",
+				"catalog_helper"
+			],
+			[
+				"getWi",
+				"getWishItem"
+			],
+			[
+				"w",
+				"wishlist"
+			],
+			[
+				"array_",
+				"array_subcategory"
+			],
+			[
+				"total",
+				"totals_array"
+			],
+			[
+				"tot",
+				"totals_array"
+			],
+			[
+				"ta",
+				"taxes_array"
+			],
+			[
+				"tax",
+				"tax_array"
+			],
+			[
+				"taxes",
+				"taxes_array"
+			],
+			[
+				"getOr",
+				"getOrderDataById"
+			],
+			[
+				"orde",
+				"order_id"
+			],
+			[
+				"opt",
+				"options_array"
+			],
+			[
+				"options",
+				"options_array"
+			],
+			[
+				"getItem",
+				"getItemData"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"items",
+				"items_array"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"getI",
+				"getItemData"
+			],
+			[
+				"add",
+				"address_array"
+			],
+			[
+				"order",
+				"order_array"
+			],
+			[
+				"orders",
+				"orders_array"
+			],
+			[
+				"sale",
+				"sales_helper"
+			],
+			[
+				"array_ad",
+				"array_addresses"
+			],
+			[
+				"array_a",
+				"array_addresses"
+			],
+			[
+				"array_add",
+				"array_addres"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"t",
+				"tag_array"
+			],
+			[
+				"tags_",
+				"tags_array"
+			],
+			[
+				"tag",
+				"tags_model"
+			],
+			[
+				"st",
+				"stores_array"
+			],
+			[
+				"store",
+				"store_array"
+			],
+			[
+				"p",
+				"product"
+			],
+			[
+				"en",
+				"entitySummary"
+			],
+			[
+				"result",
+				"result_array"
+			],
+			[
+				"cate",
+				"category_id"
+			],
+			[
+				"ca",
+				"category_id"
+			],
+			[
+				"arra",
+				"cat_array"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"getCateg",
+				"getCategoryUrl"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"xml",
+				"xmlhttp"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/helpers/main.js",
+			"settings":
+			{
+				"buffer_size": 938,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/index.html",
+			"settings":
+			{
+				"buffer_size": 1026,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/partials/offices/officesList.html",
+			"settings":
+			{
+				"buffer_size": 836,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "IndexController.php",
+			"settings":
+			{
+				"buffer_size": 3585,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/controllers/angular.sublime-workspace",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/partials/products/search.html",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Directory/Model/Region.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/catalog/product/view/options.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/catalog/product/view/type/options/configurable.phtml",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/controller/app.js",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/controllers/IndexController.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Catalog/Data.php",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/products/search.html",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Order/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Basics/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Newsletter/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/etc/config.xml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Wishlist/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Customer/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Stores/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Customer/Helper/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/Helper/Catalog.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Customer/etc/config.xml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Sales/etc/config.xml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Adminhtml/Block/Sales/Totals.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/sales/order/totals.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/wishlist/item/list.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Wishlist/Model/Item.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/customer/form/newsletter.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Wishlist/Block/Customer/Wishlist/Item/Column.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/community/BigHippo/SignatureRequired/Block/Sales/Order/Total.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/community/BigHippo/SignatureRequired/controllers/AjaxController.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/community/BigHippo/SignatureRequired/Helper/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/community/BigHippo/SignatureRequired/Block/Checkout.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/sales/order/items/renderer/default.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Sales/Block/Order/Recent.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/sales/order/recent.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/payment/info/checkmo.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/master.bighippo.co/BH003/documentation/catalogpdfattribute/1.0.0/index.html",
+		"/Users/vitaly/Documents/websites/htdocs/master.bighippo.co/BH004/documentation/historyordersuggestions/1.0.0/index.html",
+		"/Users/vitaly/Documents/websites/htdocs/master.bighippo.co/BH005/documentation/signaturerequired/1.0.0/index.html",
+		"/Users/vitaly/Documents/websites/htdocs/master.bighippo.co/BH006/documentation/providerstocks/1.0.0/index.html",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Customer/Model/Address/Abstract.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Customer/Model/Address.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Sales/Model/Order.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Customer/Block/Account/Dashboard/Address.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/customer/address/book.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/master.bighippo.co/build.properties",
+		"/Users/vitaly/Documents/websites/htdocs/master.bighippo.co/build.xml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/customer/account/dashboard/address.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Customer/Model/Customer.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/customer/account/dashboard/info.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/customer/account/dashboard/hello.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/page/html/topmenu.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/local/Bighippo/Restext/controllers/CatalogAPI.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/tag/popular.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Tag/Helper/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Tag/Block/Popular.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/page/switch/languages.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Tag/Model/Tag/Relation.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Page/Helper/Layout.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Page/Helper/Html.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Page/Helper/Data.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Catalog/Block/Product/Abstract.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Review/Block/Helper.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/catalog/product/view.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/catalog/product/view/type/default.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/review/product/view/list.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/review/product/view/count.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Catalog/Block/Product/List.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/design/frontend/base/default/template/catalog/product/list.phtml",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Catalog/controllers/CategoryController.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Catalog/Model/Category.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Catalog/Helper/Category/Flat.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Page/Block/Html.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Page/Block/Html/Topmenu.php",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/core/Mage/Page/etc/config.xml",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/index.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/organizations/main.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/organizations/edit_office.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/organizations/myoffices.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/controller/organizations.js",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/css/main.css",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/users/signup.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/data/organizations/offices1.json",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/organizations/edit_offices.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/users/login.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/users/forget.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/data/organizations/1.json",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/data/offices/1.json",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/data/offices/3.json",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/organizations/welcome.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/controller/offices.js",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/controller/users.js",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/offices/officeTurn.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/partials/offices/officeData.html",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/data/offices/2.json",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/data/offices/4.json",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/partials/users/login.html",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/controller/users.js",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/index.html",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/helpers/Mage_Restful_Client.js",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/helpers/helloservice.js",
+		"/Users/vitaly/Documents/websites/htdocs/magento.ver/magento18/app/code/community/BigHippo/HistoryOrderSuggestions/controllers/OrderController.php",
+		"/Users/vitaly/Documents/Dropbox/Software/myfirstapp.co/angular.min.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"onclick",
+			"configu",
+			"configura",
+			"'small_image')",
+			"gettimezone",
+			"        $",
+			"restext_customer",
+			"tags_array",
+			"helper",
+			"descr",
+			"comment",
+			"getid",
+			"getTotals()",
+			"formatValue",
+			"formatDate",
+			"getItemOptions()",
+			"getItem",
+			"produc",
+			"foreac",
+			"Shipping",
+			"functi",
+			"getOrders",
+			"function getOrders",
+			"function getOrders()",
+			"getOrders()",
+			"sett",
+			"that",
+			"setting",
+			"login",
+			"sett",
+			"tel",
+			"pho",
+			"tele",
+			"cit",
+			"report",
+			"customer->getPrimaryShippingAddress()",
+			"function format(",
+			"format(",
+			"format",
+			"getAddressHtml",
+			"getPrimaryBillingAddress",
+			"getPrimaryShippingAddressHtml",
+			"phone",
+			"getPrimaryBillingAddressHtml()",
+			"getCustomerName()",
+			"single",
+			"load",
+			"collect",
+			"();",
+			"getTags()",
+			"getStores()",
+			"getSummaryHtml",
+			"getsumm",
+			"getReviewsSummaryHtml",
+			"review",
+			"setId",
+			"getcat",
+			"getLoadedProductCollection()",
+			"helper",
+			"href",
+			"\n}",
+			";\n",
+			"console",
+			"xmlhttp",
+			"   \n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Billing",
+			"pAddsses",
+			"getPrimaryShippingAddress"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/helpers/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 938,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								938,
+								938
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1026,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								964,
+								876
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/vitaly/Documents/websites/htdocs/magento.ver/myfirstapp.co/partials/offices/officesList.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								836,
+								836
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "IndexController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3585,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "angular.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

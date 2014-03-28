@@ -46,6 +46,6 @@ class Bighippo_Restext_CatalogController extends Mage_Core_Controller_Front_Acti
         $postdata = $this->getPostData();
         $query = $postdata->{'query'};
         $collection = $this->getCatalogHelper()->getSuggestCollection($query);
-        return json_encode(array('greeting' => $collection));
+        return json_encode($collection);
     }
 }

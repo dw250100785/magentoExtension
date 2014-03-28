@@ -1,0 +1,66 @@
+<div id="ic-wrapper">
+    <div id="ic-tabbar">
+        <a href="#" onclick="iCloset.initCategories(); return false;" id="ic-category-button" >&nbsp;</a>
+    </div>
+    <div id="ic-filter-wrapper">
+        <div id="ic-filter-label">&nbsp;</div>
+        <div id="ic-filter">&nbsp;</div>
+    </div>
+    <div id="ic-model">
+        <!--div id="ic-icon-facebook" onclick="iCloset.share('facebook'); return false;">&nbsp;</div>
+        <div id="ic-icon-twitter" onclick="iCloset.share('twitter'); return false;">&nbsp;</div>
+        <div id="ic-icon-pinterest" onclick="iCloset.share('pinterest'); return false;">&nbsp;</div-->
+        
+    </div>
+    <div id="ic-product-wrapper">
+        <div id="ic-messages">
+            <div id="ic-total">&nbsp;</div>
+            <div id="ic-pages">&nbsp;</div>
+        </div>
+        <div id="ic-products">&nbsp;</div>
+        <div id="ic-controllers">&nbsp;</div>
+    </div>
+    <div class="clearer">&nbsp;</div>
+    <div id="ic-browsers">
+        Internet Explorer 8 | 
+        Firefox 14 | 
+        Chrome 12 | 
+        Opera 12.01 | 
+        Safari 5.1
+        <br />
+        <a href="http://www.ipascual.com" target="_blank">&copy; BigHippo</a>
+    </div>
+    
+</div>
+
+
+<script type="text/javascript">
+    (function($) {
+        $(document).ready(function($) {
+
+            //iCloset config
+            iCloset.icWrapper = "#ic-wrapper";
+            
+            iCloset.checkoutFormId = 'ic-checkout-form';
+            iCloset.checkoutInputId = 'ic-checkout-form-skus';
+            
+            iCloset.shareFormId = 'ic-share-form';
+            iCloset.shareInputNetworkId = 'ic-share-form-network';
+            iCloset.shareInputModelId = 'ic-share-form-model';
+            iCloset.shareInputLogId = 'ic-share-form-logid';
+            iCloset.shareInputSkus = 'ic-share-form-skus';
+            
+          
+            iCloset.imgLoading = '<?php echo $this->getSkinUrl("icloset/images/loading.gif");?>';
+            iCloset.pageSize = 12;
+            iCloset.currency = "<?php echo Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol(); ?>";
+
+            //Personalize events
+            //iCloset.renderProduct = function(product) {}
+           
+            //iCloset launchs
+            iCloset.init("women");
+
+        });
+    })(jQuery);
+</script>

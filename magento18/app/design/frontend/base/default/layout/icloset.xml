@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+    <icloset_index_index>
+		<reference name="head">
+    	    <!-- Online resources -->
+   	    	<block type="core/text" name="google.cdn.jquery">
+				<action method="setText">
+					<text><![CDATA[
+						<!-- jQuery -->
+						<link rel="stylesheet" type="text/css" src="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css"></link>
+						<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script><script type="text/javascript">jQuery.noConflict();</script>
+						<script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+						<!-- iPad compatibility -->			
+						<script type="text/javascript" src="http://bighippo.co/BH001/skin/frontend/base/default/js/jquery.ui.touch-punch.min.js"></script>
+						<!-- BigHippo iCloset -->
+						<link rel="stylesheet" type="text/css" src="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css"></link>
+					]]></text>
+				</action>
+			</block>
+		</reference>
+        <reference name="root">
+            <action method="setTemplate"><template>icloset/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+			<block type="icloset/main" name="icloset.view" template="icloset/main.phtml">
+        	</block>
+        </reference>
+    </icloset_index_index>
+    
+</layout> 

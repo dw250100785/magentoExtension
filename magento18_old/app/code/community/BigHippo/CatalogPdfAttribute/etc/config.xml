@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<BigHippo_CatalogPdfAttribute>
+			<version>1.1.0</version>
+		</BigHippo_CatalogPdfAttribute>
+	</modules>
+
+	<global>
+		<models>
+			<catalogpdfattribute>
+				<class>BigHippo_CatalogPdfAttribute_Model</class>
+			</catalogpdfattribute>
+		</models>
+		
+        <resources>
+            <catalogpdfattribute_setup>
+                <setup>
+                    <module>BigHippo_CatalogPdfAttribute</module>
+                </setup>
+            </catalogpdfattribute_setup>
+        </resources>
+
+	</global>
+	
+</config>

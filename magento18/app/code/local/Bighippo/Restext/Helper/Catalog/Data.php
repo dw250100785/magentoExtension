@@ -201,8 +201,11 @@ class Bighippo_Restext_Helper_Catalog_Data extends Mage_Core_Helper_Abstract
         $products_array = array();
         foreach ($collection as $product) {
             $product = Mage::getModel("catalog/product")->load($product->getId());
-            $product_array = $this->getProductArray($product);
-            array_push($products_array, $product_array);
+            if($product->getData('visibility')==4) //IT SHOWS ONLY PRODUCTS VISIBLE FROM CATALOG
+            {
+                $product_array = $this->getProductArray($product);
+                array_push($products_array, $product_array);
+            }
         }
         return $products_array;
     }

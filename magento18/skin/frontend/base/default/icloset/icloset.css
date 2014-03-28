@@ -1,0 +1,58 @@
+a {text-decoration: none; color: #878787; }
+.draggable {
+	position: absolute;
+	width: 80px;
+	height: 40px;
+	border: 1px solid #0090DF;
+	background-color: #68BFEF;
+	padding: 10px;
+	text-align: center;
+}
+/*
+ * Main containers
+ */
+#ic-wrapper
+{
+	width: 952px;
+	height: 760px;
+	margin: 0px auto;
+	padding-bottom: 20px;
+	border: 1px solid #f3f3f3;
+	overflow: hidden;
+}
+#ic-model {position: relative !important; background: no-repeat; float: left; width: 240px; height: 700px}
+
+/*
+ * Filter
+ */
+#ic-filter-wrapper {float: left; width: 160px; height: 700px; margin-left: 5px}
+#ic-filter-label {float: left; color: #0073be; padding: 10px; font-size: 16px}
+#ic-filter {float: left; width: 100%; height: 700px}	
+#ic-filter ul li {padding: 10px 0px 5px 10px; font-size: 16px; width: 90%;}
+#ic-filter ul li.selected {background: #D4D4D4}
+#ic-filter ul li.selected a {color: black;}
+
+/*
+ * Product
+ */	  
+#ic-product-wrapper {float: right; width: 540px; height: 700px; }
+#ic-messages { float: right; width: 100%; height: 15px; padding: 10px 5px 0px 0px; color: #C8C8C8}
+#ic-pages { float: right; font-size: 18px; text-align: right;}
+#ic-total { float: left; font-size: 16px; width: 400px; padding-left: 10px}
+#ic-products {float: left; width: 100%; height: 620px; padding-top: 25px; font-size: 18px;}
+.ic-product {float: left; margin: 2px; width: 130px; height: 195px; text-align: center; font-size: 12px; background: white;}
+.ic-product-img-small {}
+
+/*
+ * Controllers
+ */
+#ic-controllers {float: left; width: 100%; height: 40px;}
+.ic-forward{width: 150px; height: 28px; float: right; font-size: 18px; text-align: right; padding-right: 10px; }
+.ic-backward{width: 150px; height: 26px; float: right; font-size: 18px }
+.ic-forward { float: right; }
+.ic-backward { float: left; }
+
+/*
+ * Others
+ */
+#ic-browsers { text-align: center; clear: both; font-size: 8px; line-height: 14px; padding-top: 30px; }

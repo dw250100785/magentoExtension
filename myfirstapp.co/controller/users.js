@@ -1,6 +1,6 @@
 function UsersLoginController($scope, $http){
 	$scope.validate_user = function(){
-		$http.post("http://magento.ver/magento18/restext/customer?method=login", {
+		$http.post(getDir()+"customer?method=login", {
 				username: $scope.username,
 				password: $scope.password
 			}).success(function(data) {
@@ -12,7 +12,7 @@ function UsersLoginController($scope, $http){
 			  }
 
 	$scope.logout = function(){
-		$http.get("http://magento.ver/magento18/restext/customer?method=logout").success(function(data) {
+		$http.get(getDir()+"customer?method=logout").success(function(data) {
 			      console.log(getResponseTag(data));
 			      $scope.response = getResponseTag(data);
 			  	}).error(function(data) {
@@ -23,7 +23,7 @@ function UsersLoginController($scope, $http){
 
 function UsersForget($scope, $http){
 	$scope.forgotPassword = function(){
-	$http.post("http://magento.ver/magento18/restext/customer?method=forgotPassword", {
+	$http.post(getDir()+"customer?method=forgotPassword", {
 				email: $scope.email
 		}).success(function(data) {
 		      console.log(getResponseTag(data));
@@ -34,7 +34,7 @@ function UsersForget($scope, $http){
 	};
 
 	$scope.resetPassword = function(){
-		$http.post("http://magento.ver/magento18/restext/customer?method=resetPassword", {
+		$http.post(getDir()+"customer?method=resetPassword", {
 				id: "2",
 				token: "82d27b471487824c329530c1ebcdb903",
 				password: $scope.new_password
@@ -50,7 +50,7 @@ function UsersForget($scope, $http){
 function UsersSignUp($scope, $http){
 
 	$scope.createCustomer = function(){
-		$http.post("http://magento.ver/magento18/restext/customer?method=createCustomer", {
+		$http.post(getDir()+"customer?method=createCustomer", {
 				
 				firstName: $scope.firstName,
 				lastName: $scope.lastName,

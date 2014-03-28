@@ -1,0 +1,18 @@
+<?php $_description = $this->getProduct()->getDescription(); ?>
+<?php if ($_description): ?>
+    <h2><?php echo $this->__('Details') ?></h2>
+    <div class="std">
+        <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_description, 'description') ?>
+    </div>
+    <br />
+    <?php $pdfUrl = $this->getProduct()->getData("pdf_file"); ?>
+
+	<?php if($pdfUrl): ?>
+	<?php
+		if( !preg_match("/^http\:\/\/|https\:\/\//", $pdfUrl) ) {
+			$pdfUrl = Mage::getBaseUrl('media') . 'files' . DS . $pdfUrl;
+		}
+	?>
+	<a href="<?php echo $pdfUrl ?>"><img src="<?php echo $this->getSkinUrl('images/pdf.png') ?>" width="50px" /></a>
+	<?php endif; ?>
+<?php endif; ?>
