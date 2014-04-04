@@ -1,3 +1,3 @@
-function MainCtrl($scope){
-    console.log('entro');
+function MainCtrl($scope, $http){
+
 }

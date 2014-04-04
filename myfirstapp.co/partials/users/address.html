@@ -1,0 +1,105 @@
+<div class="container">
+	<h3>Manage Address</h3>
+	<div class="alert alert-danger" id="error_message" style="display:none"></div>
+	<div class="row">
+        <leftmenu></leftmenu>
+        <div class="col-md-9">
+        	<a href="#/users/newAddress" class="btn btn-success">+ Add</a>
+        	<br><br>
+			<table class="table">
+			<tr>
+				<th width="25%">Shipping Address</th>
+				<th>
+				<a href="#/users/editAddress/{{shipping.id}}" class="btn btn-primary">Edit</a>	
+				<a href="#/users/deleteAddress/{{shipping.id}}" class="btn btn-danger">Delete</a></th>
+			<tr>
+				<td>Name:</td>
+				<td>{{shipping.name}}</td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td>{{shipping.city}}</td>
+			</tr>
+			<tr>
+				<td>Region:</td>
+				<td>{{shipping.region}}</td>
+			</tr>
+			<tr>
+				<td>Country:</td>
+				<td>{{shipping.country}}</td>
+			</tr>
+			<tr>
+				<td>Telephone:</td>
+				<td>{{shipping.telephone}}</td>
+			</tr>
+			<tr>
+				<td>Street:</td>
+				<td>{{shipping.street1}}</td>
+			</tr>
+			</table>
+			<table class="table">
+			<tr>
+				<th width="25%">Billing Address</th>
+				<th>
+				<a href="#/users/editAddress/{{billing.id}}" class="btn btn-primary">Edit</a>	
+				<a href="#/users/deleteAddress/{{billing.id}}" class="btn btn-danger">Delete</a></th>
+			<tr>
+				<td>Name:</td>
+				<td>{{billing.name}}</td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td>{{billing.city}}</td>
+			</tr>
+			<tr>
+				<td>Region:</td>
+				<td>{{billing.region}}</td>
+			</tr>
+			<tr>
+				<td>Country:</td>
+				<td>{{billing.country}}</td>
+			</tr>
+			<tr>
+				<td>Telephone:</td>
+				<td>{{billing.telephone}}</td>
+			</tr>
+			<tr>
+				<td>Street:</td>
+				<td>{{billing.street1}}</td>
+			</tr>
+			</table>
+			<!--aditional addresses!-->
+			<table class="table" ng-repeat="additional in additionals">
+			<tr>
+				<th width="25%">Additional address #{{$index + 1}}</th>
+				<th>
+				<a href="#/users/editAddress/{{billing.id}}" class="btn btn-primary">Edit</a>
+				<a href="#/users/deleteAddress/{{additional.id}}" class="btn btn-danger">Delete</a></th>
+			<tr>
+				<td>Name:</td>
+				<td>{{additional.name}}</td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td>{{additional.city}}</td>
+			</tr>
+			<tr>
+				<td>Region:</td>
+				<td>{{additional.region}}</td>
+			</tr>
+			<tr>
+				<td>Country:</td>
+				<td>{{additional.country}}</td>
+			</tr>
+			<tr>
+				<td>Telephone:</td>
+				<td>{{additional.telephone}}</td>
+			</tr>
+			<tr>
+				<td>Street:</td>
+				<td>{{additional.street1}}</td>
+			</tr>
+			</table>
+        </div>
+    </div>
+</div>

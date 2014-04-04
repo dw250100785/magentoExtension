@@ -1,0 +1,77 @@
+<div class="container">
+	<h3>Add a new address</h3>
+	<div class="alert alert-danger" id="error_message" style="display:none"></div>
+	<div class="row">
+        <leftmenu></leftmenu>
+        <div class="col-md-9">
+			<form name="address_form" class="form-horizontal">
+			<div class="form-group">
+				<label for="firstName" class="col-sm-2 control-label">First name:</label>
+				<div class="col-sm-10">
+					<input type="text" ng-model="firstName" class="form-control" required/>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="col-sm-2 control-label">Last name:</label>
+				<div class="col-sm-10"><input type="text" ng-model="lastName" class="form-control" required/></div>
+			</div>
+			<div class="form-group">
+				<label for="company" class="col-sm-2 control-label">Company:</label>
+				<div class="col-sm-10"><input type="text" ng-model="company" class="form-control" required/></div>
+			</div>
+			<div class="form-group">
+				<label for="telephone" class="col-sm-2 control-label">Telephone:</label>
+				<div class="col-sm-10"><input type="text" ng-model="telephone" class="form-control" required/></div>
+			</div>
+			<div class="form-group">
+				<label for="fax" class="col-sm-2 control-label">Fax:</label>
+				<div class="col-sm-10"><input type="text" ng-model="fax" class="form-control"/></div>
+			</div>
+			<div class="form-group">
+				<label for="street_address" class="col-sm-2 control-label">Street address:</label>
+				<div class="col-sm-10"><input type="text" ng-model="street_address" class="form-control" required/></div>
+			</div>
+			<div class="form-group">
+				<label for="street_address2" class="col-sm-2 control-label">Street address 2:</label>
+				<div class="col-sm-10"><input type="text" ng-model="street_address2" class="form-control"/></div>
+			</div>
+
+
+			<div class="form-group">
+				<label for="zip" class="col-sm-2 control-label">Zip code:</label>
+				<div class="col-sm-10"><input type="text" ng-model="zip" class="form-control"/></div>
+			</div>
+			<div class="form-group">
+				<label for="country_select" class="col-sm-2 control-label">Country:</label>
+				<div class="col-sm-10">
+					<select class="form-control" ng-model="country_select" ng-options="country.label for country in settings.countries track by country.value" 
+					></select>
+				</div>
+			</div>	
+			<div class="form-group">
+				<label for="region_select" class="col-sm-2 control-label">State or province:</label>
+				<div class="col-sm-10">
+					<select class="form-control" ng-model="region_select" ng-options="region.label for region in country_select.regions track by region.value"></select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="city" class="col-sm-2 control-label">City:</label>
+				<div class="col-sm-10"><input type="text" ng-model="city" class="form-control" required/></div>
+			</div>
+			<div class="form-group">
+      			<label for="billing_address" class="col-sm-2 control-label">Use as my default billing address</label>
+      			<div class="col-sm-10"><input type="checkbox" class="form-control" ng-model="billing_address"></div>
+      		</div>
+      		<div class="form-group">
+      			<label for="shipping_address" class="col-sm-2 control-label">Use as my default shipping address</label>
+					<div class="col-sm-10"><input type="checkbox" class="form-control" ng-model="shipping_address"></div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-10">
+					<button type="submit" ng-click="addAddress()" class="btn btn-default">Submit</button>
+				</div>
+			</div>
+		</form>
+        </div>
+    </div>
+</div>

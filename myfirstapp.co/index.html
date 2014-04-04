@@ -2,16 +2,38 @@
 <html ng-app="myApp">
   <head>
   	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <title>My First App</title>
-  	<h1>Welcome to myfirstapp.co</h1>
   </head>
-  <body>
-  <div class="main_div">
-  	<div class="menu_options">
-  		<span><a ng-href="#/offices">Offices list</a></span>
-  		<span><a ng-href="#/users">Login</a></span>
-      <span><a ng-href="#/organizations">Organization's Dashboard</a></span>
-  	</div>
+  <body ng-controller="IndexController">
+  <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ng-hide="loggedIn"><a href="#/users">Log In</a></li>
+        <li ng-show="loggedIn"><a href="#/users/dashboard">My dashboard</a></li>
+        <li ng-show="loggedIn"><a href="#/organizations">Organizations</a></li>
+        <li><a href="#/products">Catalog</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-if="response.status"><a href="#/users/logout">Log out</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  <div class="container">
     <div ng-view=""></div>
   </div>
     <script src="angular.min.js"></script>
@@ -22,6 +44,8 @@
     <script src="controller/offices.js"></script>
     <script src="controller/users.js"></script>
     <script src="controller/organizations.js"></script>
+    <script src="controller/index.js"></script>
+    <script src="helpers/service.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="helpers/main.js"></script>
   </body>

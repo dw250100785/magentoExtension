@@ -42,5 +42,11 @@ function getResponseTag(xml){
 }
 
 function getDir(){
-	return "http://magento.ver/magento18/index.php/restext/";
+	return "http://magento.ver/magento18/restext/";
+}
+
+function showError(error){
+	error_message = document.getElementById("error_message");
+	error_message.innerHTML = error;
+	$("#error_message").fadeIn("slow", function(){});
 }
