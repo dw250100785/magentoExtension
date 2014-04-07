@@ -17,15 +17,6 @@ function UsersLoginController($scope,$rootScope, $http, $location , MenuStatus){
 			  		console.log("error en el servicio web");
 			  	});
 			  }
-
-	$scope.logout = function(){
-		$http.get(getDir()+"customer?method=logout").success(function(data) {
-			      $scope.response = getResponseTag(data);
-			      $location.path("");
-			  	}).error(function(data) {
-			  		console.log("error en el servicio web");
-			  	});
-			  }
 }
 
 function UsersLogoutController($scope,$rootScope, $http, $location){
@@ -179,7 +170,7 @@ function UsersEditAddress($scope, $http, $location, $routeParams){
 
 	$http.get(getDir()+"customer?method=getAddressData&id="+$routeParams.id).success(function(data) {
 			      $scope.response = getResponseTag(data);
-			      console.log($scope.response);
+			      $scope.addressId = $scope.response.addressId;
 			      $scope.firstName = $scope.response.firstName;
 			      $scope.lastName = $scope.response.lastName;
 			      $scope.city = $scope.response.city;
@@ -197,4 +188,98 @@ function UsersEditAddress($scope, $http, $location, $routeParams){
 			  	}).error(function(data) {
 			  		console.log("error en el servicio web");
 	});
+
+
+	$scope.editAddress = function(){
+		country_tmp = $scope.country_select.value;
+		
+		if($scope.region_select === null)
+			region_tmp = "";
+		else
+			region_tmp = $scope.region_select.value;
+
+		$http.post(getDir()+"customer?method=saveAddress", {
+				addressId: $scope.addressId,	
+				firstName: $scope.firstName,
+				lastName: $scope.lastName,
+				company: $scope.company,
+				telephone: $scope.telephone,
+				fax: $scope.fax,
+				street_address: $scope.street_address,
+				street_address2: $scope.street_address2,
+				zip: $scope.zip,
+				country: country_tmp,
+				region: region_tmp,
+				city: $scope.city,
+				billing_address: $scope.billing_address,
+				shipping_address: $scope.shipping_address
+				
+		}).success(function(data) {
+		      $scope.response = getResponseTag(data);
+		      if($scope.response.status){
+		      		$location.path("users/address");
+		      }
+		      else{
+		      		showError("Please check your address info");
+		      }
+		  	}).error(function(data) {
+		  		console.log("error en el servicio web");
+		  	});
+	}
+}
+
+function UsersPassword($scope, $http, $location, $routeParams){
+	$scope.changePassword = function(){
+		$http.post(getDir()+"customer?method=changePassword", {
+				old_password: $scope.old_password,
+				password: $scope.password
+		}).success(function(data) {
+		      $scope.response = getResponseTag(data);		      
+		      if($scope.response.status)
+		      		{ 		      		   
+		      		   showSuccess("Your password has been changed");
+		      		   //$location.path("users/dashboard");
+		      		}
+		      else
+		      		showError("Please check your old password");
+		      //$location.path("users/dashboard");
+		  	}).error(function(data) {
+		  		showError("Your personal data has not been updated, please try later :(");
+		  		console.log("error en el servicio web");
+		  	});
+	};
+}
+
+function UsersEdit($scope, $http, $location, $routeParams){
+	$http.get(getDir()+"customer?method=getUserData").success(function(data) {			      
+			      $scope.response = getResponseTag(data);
+			      $scope.firstName = $scope.response.firstName;
+			      $scope.lastName = $scope.response.lastName;
+			      $scope.email = $scope.response.email;
+			  	}).error(function(data) {
+			  		console.log("error en el servicio web");
+	});
+
+	$http.get(getDir()+"customer?method=getNewsletterStatus").success(function(data) {			      
+			      $scope.response = getResponseTag(data);
+			      $scope.isSubscribed = $scope.response.status;
+			  	}).error(function(data) {
+			  		console.log("error en el servicio web");
+	});   
+
+	$scope.editCustomer = function(){
+		$http.post(getDir()+"customer?method=editCustomer", {
+				firstName: $scope.firstName,
+				lastName: $scope.lastName,
+				email: $scope.email,
+				isSubscribed: $scope.isSubscribed
+
+		}).success(function(data) {
+		      $scope.response = getResponseTag(data);
+		      $location.path("users/dashboard");
+		  	}).error(function(data) {
+		  		showError("Your personal data has not been updated, please try later :(");
+		  		console.log("error en el servicio web");
+		  	});
+	};
 }

@@ -54,6 +54,14 @@ var myApp = angular.module('myApp', [
         templateUrl: 'partials/users/editAddress.html',
         controller: 'UsersEditAddress'
       })
+      .when('/users/edit', {
+        templateUrl: 'partials/users/edit.html',
+        controller: 'UsersEdit'
+      })
+      .when('/users/password', {
+        templateUrl: 'partials/users/password.html',
+        controller: 'UsersPassword'
+      })
       .when('/users/deleteAddress/:id', {
         templateUrl: 'partials/users/address.html',
         controller: 'UsersDeleteAddress'

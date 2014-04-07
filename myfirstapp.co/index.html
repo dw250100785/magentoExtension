@@ -28,7 +28,7 @@
         <li><a href="#/products">Catalog</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li ng-if="response.status"><a href="#/users/logout">Log out</a></li>
+        <li ng-show="loggedIn"><a href="#/users/logout">Log out</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

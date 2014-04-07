@@ -50,3 +50,9 @@ function showError(error){
 	error_message.innerHTML = error;
 	$("#error_message").fadeIn("slow", function(){});
 }
+
+function showSuccess(message){
+	success_message = document.getElementById("success_message");
+	success_message.innerHTML = message;
+	$("#success_message").fadeIn("slow", function(){});
+}
